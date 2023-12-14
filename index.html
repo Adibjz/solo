@@ -3,157 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-   <link rel="stylesheet" href="style.css">
-   <title >FlowerShop</title>
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Updated Font Awesome CDN -->
+    <title>FlowerShop</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .navbar {
+            background-color: #d9534f; /* Red Bull color */
+        }
+
+        .navbar-brand {
+            color: #ffffff; /* White text */
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important; /* White text */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff; /* White background for the navbar toggler icon */
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .display-4 {
+            color: #d9534f; /* Red Bull color */
+        }
+
+        .lead {
+            color: #343a40; /* Dark gray text */
+        }
+
+        .list-group-item {
+            background-color: #d9534f; /* Red Bull color */
+            color: #ffffff; /* White text */
+            border: none;
+        }
+
+        .types h2 {
+            color: #343a40; /* Dark gray text */
+        }
+
+        /* Flower pictures section */
+        .flower-images {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flower-images img {
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add more custom styles as needed */
+    </style>
 </head>
 <body>
 
-  
-    <!-- Navbar items -->
-    <div id="navlist">
-      <a href="#">Home</a>
-      <a href="#">Our Products</a>
-      <a href="#">Careers</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">FlowerShop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Our Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
 
-      <!-- search bar right align -->
-      <div class="search">
-          <form action="#">
-              <input type="text"
-                     placeholder=" Search Courses"
-                     name="search">
-                <button>
-                  <i class="fa fa-search"
-                     style="font-size: 18px;">
-                  </i>
-              </button>
-          </form>
-      </div>
-  </div>
-    <h1 id="title">flowerSHop</h1>
-    <p><h1 id="p"> with our website you will be able to book your owen bouquet </h1></p>   
-<p><h2 id="intro">we will try to provide you with the best types of flower and we will help you to pick the right choice depends on the event </h2></p>
-<div>
-<ul class="types">
-<li><h2>flower Birthday</h2></li>
-<li><h2>flower Summer</h2></li>
-<li><h2>flower valentine</h2></li>
-<li><h2>flower Wedding</h2></li>
-</ul>
-</div>  
-<div id="navbar" class="bg-white">
-  <div class="row search-padding">
-   <div id="shop"></div> 
-UserID
-</a>
-<div>              
-<ul class="pets-menu">
-<li><a class="pets-item text-uppercase font-extrabold" href="#">Signup</a></li>
-<li><a class="pets-item text-uppercase font-extrabold" href="#">Report a Problem</a></li>
-</ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Flowers" name="search">
+            <button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</nav>
 
-<a href="http://127.0.0.1:5500/pickYourflower.htm">Login</a>
-</li>
-</div>
-<p class="lead">Welcome to flowclick, we creat this platform to help you picking right choice just follow us</p>
-           
-    
-    <div class="container px-4 py-5" id="featured-3">
-      <h1 class="display-5 fw-bold text-center text-main">flowclick</h1>
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-         
-          <h3 class="fs-2  text-center text-main">types</h3>
-          <p>here you can find all types of flowers</p>
-        </div>
-        <div class="feature col">
-        
-          <h3 class="fs-2  text-center text-main">what you should do</h3>
-          <p>pick the right choice </p>
-        </div>
-        <div class="feature col">
-    
-          <h3 class="fs-2  text-center text-main"> check</h3>
-          <p></p>
-        </div>
-      </div>
+<div class="container mt-4">
+    <h1 class="display-4">FlowerShop</h1>
+    <p class="lead">Explore our collection of beautiful flowers and find the perfect bouquet for any occasion.</p>
+    <p>We are here to help you choose the right flowers for your special moments.</p>
+
+    <ul class="list-group types">
+        <!-- Add links to flower pages -->
+        <li class="list-group-item"><a href="http://127.0.0.1:5500/ready.html"><h2>Flower Birthday</h2></a></li>
+        <li class="list-group-item"><a href="http://127.0.0.1:5500/ready.html"><h2>Flower Summer</h2></a></li>
+        <li class="list-group-item"><a href="http://127.0.0.1:5500/ready.html"><h2>Flower Valentine</h2></a></li>
+        <li class="list-group-item"><a href="http://127.0.0.1:5500/ready.html"><h2>Flower Wedding</h2></a></li>
+        <li class="list-group-item"><a href="http://127.0.0.1:5500/pickYourflower.htm"><h2>another types</h2></a></li>
+    </ul>
+    <!-- Flower pictures section -->
+    <div class="flower-images">
+        <img src="./images/Jasmin.jpg" alt="jasmin">
+        <img src="./images//rose.jpg" alt="rose">
+        <img src="./images//Sunflower_sky_backdrop.jpg" alt="SunFlower">
+        <!-- Add more flower images as needed -->
     </div>
-     
-     <div class="container my-5 bg-three">
-      <div class="row pb-0 pe-lg-0  align-items-center rounded-3">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">what we will do with this website.
-        </h1>
-          <p><h1>we will help you to find what you are looking for</h1></p> 
-          
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img src="images/téléchargement.jpg"  width="300">
-        </div>
-      </div>
-    </div>
-       
-      </div>
-    <!--footer-->
-    <div class="container pt-4">
-      <footer class="py-4">
+<!-- Social media icons section -->
+<div class="container-fluid p-4">
+    <div class="container">
         <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5 class="text-uppercase text-main fw-semibold">service</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">News</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">help</a></li>
-              <li class="nav-item mb-2"><a href="http://127.0.0.1:5500/ready.html" class="nav-link p-0 text-body-secondary">readyPackets</a></li>
-            </ul>
-          </div>
-    
-      
-    
-          <div class="col-6 col-md-2 mb-3">
-            <h5 class="text-uppercase text-main fw-semibold">Stay In Touch</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa fa-phone"></i> 78777777</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa fa-phone"></i> 27348509</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa fa-envelope"></i> jaziri@flowerShop.tn</a></li>
-    
-            </ul>
-          </div>
-    <p>@follow us with one click </p>
-        <ul>  
-        <li>   
-        <a href="https://www.facebook.com/flowershop/" class="fa fa-facebook"> </a>   
-        </li>  
-        <li>  
-        <a href="https://twitter.com/armyflowershop" class="fa fa-twitter"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-pinterest"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-linkedin"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-instagram"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-youtube"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-google"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-snapchat-ghost"> </a>  
-        </li>  
-        <li>  
-        <a href="#" class="fa fa-skype"> </a></li></ul>
-<script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
-<script src="main.js"></script>   
+            <div class="col text-center">
+                <h2>Connect With Us</h2>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Your existing scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<style>
+    /* Your existing styles */
+
+    /* Social media icons styles */
+    .social-icon {
+        font-size: 24px;
+        color: #d9534f; /* Red Bull color */
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .social-icon:hover {
+        color: #2b0c0b; /* Darker shade on hover */
+    }
+</style>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

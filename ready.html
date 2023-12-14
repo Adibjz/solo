@@ -3,30 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ready Flowers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-   <link rel="stylesheet" href="style.css">
-   <style> body{
-    background: linear-gradient(335deg, rgb(220, 109, 189) 0%, rgb(255, 168, 245) 100%);
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-height: 100px;
-   }
-</style>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(335deg, rgb(220, 109, 189) 0%, rgb(255, 168, 245) 100%);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff; /* White text for better contrast */
+        }
+
+        .container {
+            max-width: 400px; /* Adjusted max width for better visibility */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for a clean look */
+            background: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #d9534f; /* Red Bull color */
+            color: #fff; /* White text */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 5px; /* Adjusted button margin */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition on color change */
+        }
+
+        button:hover {
+            background-color: #c9302c; /* Slightly darker shade on hover */
+            color: #fffffffb; /* White text on hover */
+        }
+
+        #flowerImage {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #d9534f; /* Red Bull color border around the image */
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p> <h1>welcome to our space</h1>  
-    <p><h2>we will put all of our collection on your hand></h2></p>   
-    <p><h2> just with one click and you will see all types of flower which we have ready for this moment</h2></p> 
-    <p><h1>just few clicks and you will see it all </h1> </p>
-    <p> <h1>we should pick the right choice denpends on the event </h1> </p>
-    <div class="ready"></div>
-   <img src="/images/Jasmin.jpg " id="img">
-   <button onclick="btn()">clicks</button>
+    <div class="container">
+        <h1>Welcome to Our Flower Collection</h1>
+        <p>Explore our ready-to-go flower arrangements with just a few clicks.</p>
+        <div>
+            <button onclick="changeImage('prev')">Previous</button>
+            <button onclick="changeImage('next')">Next</button>
+        </div>
+        <img src="/images/Jasmin.jpg" id="flowerImage" class="img-fluid mt-3">
+    </div>
 
-</div>
- <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
-<script src="main.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>   
 </body>
 </html>
+
+
